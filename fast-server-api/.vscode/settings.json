@@ -1,0 +1,8 @@
+{
+    "python.linting.flake8Enabled": false,
+    "python.linting.enabled": false,
+    "python.formatting.provider": "yapf",
+    "editor.formatOnSave": false,
+    "editor.formatOnType": false,
+    "editor.tabSize": 4
+}
