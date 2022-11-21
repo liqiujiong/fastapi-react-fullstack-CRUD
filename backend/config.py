@@ -25,7 +25,7 @@ BASE_PATH = str(
 SQLALCHEMY_DATABASE_URL = str(
     os.environ.get(
         "SQLALCHEMY_DATABASE_URL",
-        "mysql+mysqlconnector://root:123456@localhost:3306/gvf-dev"))
+        "mysql+mysqlconnector://root:123456@localhost:3306/FRFC"))
 
 # redis配置
 REDIS_HOST: str = "127.0.0.1"

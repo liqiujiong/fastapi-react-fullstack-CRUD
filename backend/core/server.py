@@ -8,7 +8,6 @@ from starlette.middleware.cors import CORSMiddleware
 from common.sys_redis import redis_client
 from common.logger import logger
 from schemas.response import resp
-from common.sys_broadcast import broadcast_client
 from db.session import engine, Base
 from common import custom_exc
 
@@ -59,8 +58,6 @@ def register_init(app: FastAPI) -> None:
         # 连接redis
         # redis_client.init_redis_connect()
 
-        # await broadcast_client.init_broadcast_connect()
-
         # 初始化 apscheduler
         # schedule.init_scheduler()
 
@@ -74,8 +71,6 @@ def register_init(app: FastAPI) -> None:
         关闭
         :return:
         """
-
-        # broadcast_client.disconnect()
 
         # schedule.shutdown()
 

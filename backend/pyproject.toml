@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "backend"
+version = "0.1.0"
+description = ""
+authors = ["liqiujiong <pelle@live.cn>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.8.10"
+fastapi = "^0.87.0"
+python-dotenv = "^0.21.0"
+sqlalchemy = "^1.4.44"
+pymysql = "^1.0.2"
+mysql-connector-python = "^8.0.31"
+loguru = "^0.6.0"
+python-multipart = "^0.0.5"
+python-jose = "^3.3.0"
+passlib = "^1.7.4"
+casbin = "^1.17.4"
+casbin-sqlalchemy-adapter = "^0.5.0"
+redis = "^4.3.4"
+uvicorn = "^0.20.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "aliyun"
+url = "http://mirrors.aliyun.com/pypi/simple"
+default = true
