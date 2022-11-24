@@ -9,7 +9,6 @@ import Footer from '@/components/Footer';
 import { currentUser as queryCurrentUser } from './services/base';
 import defaultSettings from '../config/defaultSettings';
 import { getJwt } from './utils/token';
-import { message } from 'antd';
 
 // const isDev = process.env.NODE_ENV === 'development';
 const loginPath = '/user/login';
@@ -89,7 +88,7 @@ export const layout: RunTimeLayoutConfig = ({ initialState, setInitialState }) =
       // TODO
       if (!initialState?.currentUser && location.pathname !== loginPath) {
         // console.log('连接器定向到登录 :>> ');
-        message.info('访问需要先登录网站');
+        // message.info('访问需要先登录网站');
         history.push(loginPath);
       }
     },

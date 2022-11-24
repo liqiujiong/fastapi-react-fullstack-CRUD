@@ -219,7 +219,7 @@ const UserManage: React.FC = () => {
                     return option && option.children && option.children.indexOf(input) >= 0;
                   }}
                 >
-                  {roles.map((item: API.UserRoleData) => (
+                  {roles.map((item: API.RoleData) => (
                     <Option key={item.id} value={item.id}>
                       {item.title}
                     </Option>

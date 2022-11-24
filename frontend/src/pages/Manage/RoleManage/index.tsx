@@ -28,7 +28,7 @@ const RoleManage: React.FC = () => {
   const [selectedApiKeys, setSelectedApiKeys] = useState([] as string[]);
   const [selectedMenuKeys, setSelectedMenuKeys] = useState([] as string[]);
   const [menuHalfChecked, setMenuHalfChecked] = useState([] as string[]);
-  const [roleItem, setRoleItem] = useState({} as API.UserRoleData);
+  const [roleItem, setRoleItem] = useState({} as API.RoleData);
   const [activeKey, setActiveKey] = useState<string>('1');
   const listLoading = loading.effects['role/query'];
 
@@ -72,7 +72,7 @@ const RoleManage: React.FC = () => {
     {
       dataIndex: 'name',
       title: '操作',
-      render: (_: string, record: API.UserRoleData) => (
+      render: (_: string, record: API.RoleData) => (
         <div className={styles.operation}>
           <Button type={'link'} onClick={() => handleOpenApiRight(record)}>
             设置权限
@@ -81,7 +81,7 @@ const RoleManage: React.FC = () => {
       ),
     },
   ];
-  const handleOpenApiRight = async (record: API.UserRoleData) => {
+  const handleOpenApiRight = async (record: API.RoleData) => {
     await dispatch({
       type: 'role/getApiList',
     });
