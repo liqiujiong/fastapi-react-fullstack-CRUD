@@ -28,3 +28,13 @@
 - [-] 业务Demo实例
 - [-] 完善快速开发业务文档
 - [-] 升级到umi4
+
+## Image
+
+![image](https://github.com/liqiujiong/fastapi-react-fullstack-CRUD/blob/main/assets/ky0-1.png)
+![image](https://github.com/liqiujiong/fastapi-react-fullstack-CRUD/blob/main/assets/ky0-2.png)
+![image](https://github.com/liqiujiong/fastapi-react-fullstack-CRUD/blob/main/assets/ky1.png)
+![image](https://github.com/liqiujiong/fastapi-react-fullstack-CRUD/blob/main/assets/ky2.png)
+![image](https://github.com/liqiujiong/fastapi-react-fullstack-CRUD/blob/main/assets/ky3.png)
+![image](https://github.com/liqiujiong/fastapi-react-fullstack-CRUD/blob/main/assets/ky4.png)
+![image](https://github.com/liqiujiong/fastapi-react-fullstack-CRUD/blob/main/assets/ky5.png)
